@@ -1,0 +1,16 @@
+# programmatic-motion-video: what the engine needs to render.
+# Also install ffmpeg (a program, not a pip package): see README.md.
+#
+# Drawing (tested with 144.0.post2; if a newer release breaks something, pin skia-python==144.0.post2)
+skia-python>=144.0.post1
+# Arrays, audio synthesis and filters
+numpy>=1.23
+scipy>=1.9
+# Stills, contact sheets, image loading
+pillow>=9.1
+# Shaping for Arabic-script (Kurdish, Arabic, Persian), Hebrew and Indic text
+uharfbuzz>=0.37
+# Grapheme-safe typing effects (emoji, accents)
+regex>=2022.1
+# QR codes
+segno>=1.5

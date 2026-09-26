@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- A placeholder mark for the templates. Replace it with the client's own logo (SVG). -->
+  <rect id="tile" x="16" y="16" width="168" height="168" rx="46" fill="#7C3AED"/>
+  <path id="play" d="M82 62 L140 100 L82 138 Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="12" stroke-linejoin="round"/>
+  <circle id="dot" cx="148" cy="52" r="13" fill="#22D3EE"/>
+</svg>

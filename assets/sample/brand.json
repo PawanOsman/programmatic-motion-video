@@ -1,0 +1,16 @@
+{
+  "name": "Acme Studio",
+  "url": "acme.example",
+  "tagline": "Videos from code, in minutes.",
+  "colors": {
+    "primary": "#7C3AED",
+    "secondary": "#22D3EE",
+    "bg": "#07070D",
+    "surface": "#12121A",
+    "text": "#F5F5F7",
+    "muted": "#9B9BAD"
+  },
+  "fonts": {"display": "Inter", "body": "Inter", "mono": "JetBrains Mono", "arabic": "IBM Plex Sans Arabic"},
+  "logo": "logo.svg",
+  "radius": 16
+}

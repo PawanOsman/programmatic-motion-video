@@ -1,0 +1,15 @@
+1
+00:00:00,400 --> 00:00:02,600
+Every frame of this video is drawn by code.
+
+2
+00:00:02,800 --> 00:00:05,200
+Change one line and render it again.
+
+3
+00:00:05,400 --> 00:00:08,200
+The captions come from a subtitle file, word by word.
+
+4
+00:00:08,400 --> 00:00:11,000
+Swap in your own SRT, VTT or Whisper JSON.

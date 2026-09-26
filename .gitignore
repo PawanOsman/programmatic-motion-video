@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Renders and previews
+*.mp4
+*.mov
+*.webm
+*.mkv
+*.gif
+*.wav
+*.npz
+*.parts/
+out/
+renders/
+sheet*.png
+still*.png
+frame*.png
+/*.png
+templates/*.png
+examples/*.png
+templates/*.srt
+examples/*.srt
+
+# Packaging
+dist/
+
+# OS and editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

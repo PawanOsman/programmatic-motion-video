@@ -1,0 +1,37 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      templates:
+        description: Also run and render every template
+        type: boolean
+        default: false
+
+jobs:
+  engine:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.10', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: System packages
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg libzbar0 libgl1 libegl1
+      - name: Python packages
+        run: pip install -r requirements.txt pyzbar pygments pymupdf pyyaml
+      - name: Environment
+        run: python tools/check_env.py
+      - name: Validate the skill
+        run: python tools/package_skill.py --check
+      - name: Engine tests
+        run: python tests/run_tests.py
+      - name: Template tests
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.templates }}
+        run: python tests/run_tests.py --only-templates

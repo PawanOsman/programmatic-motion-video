@@ -1,0 +1,12 @@
+# Optional extras. Each one unlocks a feature; the engine runs without them.
+#
+# QR decoding for `python main.py qr` checks (also needs the zbar library: apt-get install libzbar0 / brew install zbar)
+pyzbar>=0.1.9
+# Vector artwork from PDFs (mv.pdf_vectors) and PDF brand books
+pymupdf>=1.23
+# Syntax highlighting for more languages in codeview (a built-in highlighter covers the common ones)
+pygments>=2.15
+# Screenshots of real websites for UI demos (media.web_capture); run `playwright install chromium` once
+playwright>=1.40
+# Reads SKILL.md frontmatter exactly in tools/package_skill.py
+pyyaml>=6.0
